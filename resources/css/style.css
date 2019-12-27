@@ -4,9 +4,9 @@
 /*----------------------------------------------*/
 :root{
     --color-white: white;
-    --color-red: #e63e22;
+    --color-red: #eb4d55;
     --color-gray: #5a5a5a;
-    --color-orange: #d35400;
+    --color-orange: #32afa9;
     --color-blue: #265077;
     --color-green: #226655;
     --color-darkBlue: #305679;
@@ -39,18 +39,19 @@ body{
     text-decoration: none;
     color: var(--color-white);
     background-color: var(--color-red);
-    padding: 15px 30px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 5px;
     margin: 0 5px;
     display: inline-block;
-    width: 190px;
+    width: 180px;
     text-align: center;
-    transition: all .3s;
+    border: 1px solid var(--color-white);
 }
 
 .btn:active,
 .btn:hover{
     background-color: var(--color-orange);  
+    transition: background-color 500ms ease-in;
 }
 
 .clearfix::after{
@@ -61,6 +62,7 @@ body{
 
 .row{
     max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -80,20 +82,20 @@ h1{
 
 
 h2{
-    color: var(--color-orange);
+    color: var(--color-red);
     font-size: 180%;
     font-weight: 700;
     text-align: center;
 }
 
-h2:after{
+h2::after{
     content: " ";
     display: block;
     width: 170px;
     height: 3px;
     background-color: rgba(243, 113, 0, 0.5);
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 h3{
@@ -105,7 +107,6 @@ h3{
     border-top-right-radius: 10px;
     border-top-left-radius: 15px;
     margin-bottom: 15px;
-
 }
 
 .p-long{
