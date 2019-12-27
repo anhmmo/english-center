@@ -1,0 +1,257 @@
+/*big tablet for dekstop and ipad*/
+
+@media only screen and (max-width: 1200px){
+   html{
+       font-size: 16px;
+   }
+
+   .heading-main-box{
+       transform: translate(-35%,-50%);
+   }
+
+   form{
+       margin-left: 30%;
+   }
+}
+
+
+/*for small tablet 768-1023*/
+@media only screen and (max-width: 1023px){
+   .logo{
+width: 300px;
+margin-left: 40px;
+   }
+
+   .main-nav{
+       margin-top: 40px;
+margin-right: 15px;
+   }
+   .main-nav li{
+       margin-right: 10px;
+}
+
+
+.heading-main-box{
+    transform: translate(-20%,-50%);
+}
+
+.products-section .btn{
+width: 80%;
+margin-left: 10%;
+}
+
+.product-box{
+    width: 95%;
+}
+
+h3{
+    font-size: 90%;
+}
+
+.product-box ul li{
+    margin-left: 5%;
+}
+
+.product-box .small-icon{
+    margin-right: 5px;
+}
+
+.social-icon li{
+    margin-left: 10px;
+}
+
+.information i{
+    display: block;
+}
+
+.information li{
+   font-size: 15px;
+}
+
+}
+
+/*for small phone 481-767*/
+@media only screen and (max-width: 767px){
+
+
+   
+    .col{
+        width: 100%;
+    }
+
+     .main-nav{
+         display: none;
+     }
+
+     .logo{
+         width: 350px;
+         margin-left: 12%;
+     }
+
+     h1{
+        word-spacing: 2px;
+        font-size: 250%;
+
+     }
+
+     .heading-main-box{
+        transform: translate(-17%,-50%);
+
+    }
+
+     .heading-main-box .btn{
+         width: 15%;
+
+     }
+
+     .about-picture img{
+         width: 100%;
+     }
+
+     .picture-title{
+         font-size: 40px;
+         margin-left: 5%;
+     }
+
+     .product-box {
+         width: 60%;
+         margin-left: 20%;
+     }
+
+     .product-box ul li{
+      
+        margin-left: 26%;
+    }
+
+
+    blockquote{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    cite{
+        width: auto;
+        padding-left: auto;
+       
+    }
+
+    .testimonials-section h2{
+        margin-bottom: 30px;
+    }
+
+    .logo-sponsor{
+        width: 100px;
+    }
+
+    figcaption{
+        font-size: 100%;
+    }
+
+
+    .information{
+          padding-left: 15%;
+    }
+
+    .social-icon{
+        padding-left: 13%;
+        margin-top: 25px;
+    }
+
+    form{
+        width: 90%;
+      margin: auto;
+    }
+
+    .mobile-nav-icon{
+        display: inline;
+    }
+
+
+}
+
+@media only screen and (max-width: 570px){
+    .mobile-nav-icon{
+        right: 20px;
+    }
+}
+
+/*for small phone 0 to 480px*/
+@media only screen and (max-width: 480px){
+   .logo{
+       width: 300px;
+       margin-left: 6%;
+   }
+
+   .heading-main-box h1{
+      
+       font-size: 180%;
+      margin-left: 5%;
+   }
+
+   .heading-main-box {
+      
+    top: 255px;
+}
+
+.heading-main-box .btn{
+      
+    width: 120px;
+   padding: 12px 0;
+   margin-left: 4%;
+}
+
+.picture-title{
+    font-size: 20px;
+    margin-left: 13%;
+}
+
+.product-box{
+    width:90%;
+    margin: auto;
+}
+.logo-sponsor {
+    width: 55px;
+}
+
+figcaption {
+    font-size: 70%;
+}
+
+.social-icon{
+    margin-bottom: 15px;
+}
+
+form{
+    width: 100%;
+    margin: auto;
+}
+
+.mobile-nav-icon{
+    right: 50px;
+    top: 40px;
+}
+
+.main-nav{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+}
+
+@media only screen and (max-width: 430px){
+
+    .mobile-nav-icon{
+        right: 5%;
+        top: 23px;
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .main-nav{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+}
