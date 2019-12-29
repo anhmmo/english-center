@@ -131,3 +131,16 @@ header{
         max-width: 320px;
     }
 }
+
+#introduction{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+#introduction h1{
+    margin-bottom: 2rem;
+}
+
+#introduction h1{
+    margin-bottom: 2rem;
+}
