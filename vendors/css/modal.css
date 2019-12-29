@@ -1,0 +1,47 @@
+        /* The Modal (background) */
+        .modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 80px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+		  }
+		  
+		  /* Modal Content */
+		  .modal-content {
+			margin: auto;
+			width: 50%;
+		  }
+  
+  
+		  iframe{
+			  width: 100%;
+		  }
+		  
+		  /* The Close Button */
+		  .close {
+			color: rgb(236, 207, 40);
+			font-size: 4rem;
+			font-weight: bold;
+			position: relative;
+			top: 0px;
+			margin: 0 auto;
+		  }
+		  
+		  .close:hover,
+		  .close:focus {
+			color: #c24a4a;
+			text-decoration: none;
+			cursor: pointer;
+		  }
+  
+		  #myBtn {
+			  padding: 0 0 2rem 0;
+			  font-size: 6rem;
+			  color: rgb(71, 255, 132);
+			  cursor: pointer;
+		  }
