@@ -8,17 +8,25 @@
 			top: 0;
 			width: 100%; /* Full width */
 			height: 100%; /* Full height */
-			overflow: auto; /* Enable scroll if needed */
+			overflow: auto; 
+			animation-name: animatetop;
+  			animation-duration: 600ms/* Enable scroll if needed */
 		  }
 		  
 		  /* Modal Content */
 		  .modal-content {
 			margin: auto;
 			width: 50%;
+			
 		  }
   
-  
+		  @keyframes animatetop {
+			from {top: -300px; opacity: 0}
+			to {top: 0; opacity: 1}
+		  }
+
 		  iframe{
+			  max-width: 800px;
 			  width: 100%;
 		  }
 		  
@@ -41,7 +49,7 @@
   
 		  #myBtn {
 			  padding: 0 0 2rem 0;
-			  font-size: 6rem;
-			  color: rgb(71, 255, 132);
+			  font-size: 5rem;
+			  color: rgb(255, 255, 255);
 			  cursor: pointer;
 		  }

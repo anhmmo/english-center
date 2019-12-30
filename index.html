@@ -21,7 +21,11 @@
 
             <div class="logo">
                 <a href="#">
-                    <img src="resources/img/logo.png" alt="logo">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    English
                 </a>
             </div>
 
@@ -57,7 +61,9 @@
 
         <!-- Trigger/Open The Modal -->
 
-            <i id="myBtn" class="far fa-play-circle"></i>
+            <i id="myBtn" class="far fa-play-circle">
+                <span id="tooltip">Play Video</span>
+            </i>
 
         <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -65,7 +71,13 @@
         <!-- Modal content -->
             <div class="modal-content">
              <span class="close">&times;</span>
-                 <iframe width="852" height="480" src="https://www.youtube.com/embed/JTlALXKLHZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe
+                 id="video"
+                height="480"
+                src="https://www.youtube-nocookie.com/embed/j4xAaULcrp4?rel=0&amp;controls=0&amp;showinfo=0"
+                frameborder="0"
+                allowfullscreen
+                ></iframe>
             </div>
 
             </div>
@@ -92,7 +104,41 @@
 
     </header>
 
- 
+<section id="about">
+    <h2>about us</h2>
+    <p>We are people that are studying English by ourselves, we believe that you don’t need to pay so much money for being good at English, we’re here to help you</p>
+
+<div class="box">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1505150892987-424388901632?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Joshua Gibson">
+      </div>
+      <div class="details">
+        <h2>Michael Teo <span>English Teacher</span></h2>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1529932260967-af9d3bbd8138?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Amanda Reed">
+      </div>
+      <div class="details">
+        <h2>Aliisa Kuli <span>English Teacher</span></h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://images.unsplash.com/photo-1526667458881-3455b57a7c50?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="Melissa Myers">
+      </div>
+      <div class="details">
+        <h2>Annaira Kan <span>English Teacher</span></h2>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<script src="/vendors/js/tooltip.js"></script>
 <script src="/vendors/js/modal.js"></script>
 </body>
 
