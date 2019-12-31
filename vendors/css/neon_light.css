@@ -1,0 +1,166 @@
+/****************STYLE 2***********/
+
+/**********************REUSEABLE EFFECT NEON BUTTON CODE**************/
+/*********************************************************************/
+
+.neon-light-box{
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  
+  .neon-light-box:hover {
+    color: #ffffff;
+    background-color: var(--color-bluelight);
+    box-shadow: 0 0 10px var(--color-bluelight), 0 0 40px var(--color-bluelight), 0 0 80px var(--color-bluelight);
+    transition-delay: 1s;
+  }
+
+  .neon-light-box span {
+    position: absolute;
+    display: block;
+  }
+  
+  .neon-light-box span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-light-box:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+  } 
+  
+  .neon-light-box span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-light-box:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s;
+  } 
+  
+  .neon-light-box span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-light-box:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+  }
+  
+  .neon-light-box span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-light-box:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+  } 
+
+/****************STYLE 1***********/
+
+
+.neon-lights-box{
+    position: relative;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  
+  .neon-lights-box:hover {
+    color: #ffffff;
+    background-color: rgb(135, 240, 189);
+    box-shadow: 0 0 10px rgb(135, 240, 189), 0 0 40px rgb(135, 240, 189), 0 0 80px rgb(135, 240, 189);
+    transition-delay: 1s;
+    border-radius: 3%;
+  }
+  
+  .neon-lights-box span {
+    position: absolute;
+    display: block;
+  }
+  
+  
+  .neon-lights-box span:nth-child(1) {
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-lights-box:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+  } 
+  
+  .neon-lights-box span:nth-child(2) {
+    top: 100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-lights-box:hover span:nth-child(2) {
+    top: -100%;
+    transition: 1s;
+    transition-delay: .25s;
+  }
+  
+  
+  .neon-lights-box span:nth-child(3) {
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-lights-box:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s;
+  } 
+  
+  .neon-lights-box span:nth-child(4) {
+    bottom: 100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, var(--color-bluelight));
+  }
+  
+  .neon-lights-box:hover span:nth-child(4) {
+    bottom: -100%;
+    transition: 1s;
+    transition-delay: .75s;
+  } 
