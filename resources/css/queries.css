@@ -1,0 +1,234 @@
+
+@media (max-width: 1087px){
+    /***********Product section************/
+    .container .column:nth-child(1), .container .column:nth-child(4) {
+      margin-left: 0;
+    }
+  
+    .container .column:nth-child(3), .container .column:nth-child(6) {
+      margin-right: 0;
+    }
+  
+    .container .column:nth-child(1), .container .column:nth-child(3), .container .column:nth-child(5) {
+      margin-left: 30px;
+    }
+  
+    .container .column:nth-child(2), .container .column:nth-child(4), .container .column:nth-child(6) {
+      margin-right: 30px;
+    }
+  }
+  
+  
+  /***********MOBILE SECTION**********/
+  @media (max-width: 1050px){
+  
+      /*main nav mobie section*/
+  
+      #main-nav {
+          flex-wrap: wrap;
+      }
+  
+      #main-nav .logo, #main-nav ul{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+      }
+  
+  
+      /*************ICON AND H1 TILTE mobile*************/
+  
+      #introduction{
+          margin: 0;
+      }
+      
+      #introduction h1{
+          margin-bottom: 2rem;
+          font-size: 3rem;
+      }
+  
+      #myBtn{
+          display: none;
+      }
+  
+      .card {
+        width: 94%;
+      }
+  
+      /********Sponsor mobile********/
+    #sponsor{
+      background-color: white;
+    }
+  
+    .sponsor-container{
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto 50px auto;
+    }
+    
+    .sponsor__link{
+      width: 40%;
+      margin: 0 2%;
+      padding-bottom: 15px;
+    }
+    
+    .sponsor__link img{
+      width: 70%;
+      margin: 20px 0;
+      padding-top: 5px;
+    }
+    
+    .sponsor__link:hover img{
+      transform: scale(1.1);
+      transition: .5s ease-in;
+    }
+  
+    
+  
+    /* contact section mobile */
+  
+    .contact-container {
+      max-width: 90%;
+      flex-wrap: wrap;
+      margin-left: 8.15%;
+    }
+  
+    form {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .contact-info {
+      width: 100%;
+    }
+    
+    input[type=text]{
+      margin-right: 2.5%;
+    }
+  
+    textarea{
+      width: 93%;
+    }
+  
+    .contact-info p:nth-child(1){
+      width: 93%;
+    }
+  
+  }
+  
+  @media (max-width: 703px){
+  
+  /******product mobile*******/
+  .container .column:nth-child(2), .container .column:nth-child(4), .container .column:nth-child(6), .container .column:nth-child(1), .container .column:nth-child(3), .container .column:nth-child(5) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  }
+  
+  @media (max-width: 650px){
+  
+      /********mobile main nav********/
+  
+      #main-nav {
+          padding: 1rem 0;
+      }
+  
+      #main-nav ul{
+          display: block;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+      }
+  
+      #main-nav ul li{
+          border-bottom: 0px solid white;
+      }
+      
+      #main-nav ul li:hover{
+          border-bottom: 0px solid white;
+      }
+  
+      #main-nav ul a{
+          border-bottom: 1px solid white;
+      }
+      
+      #main-nav ul a:hover{
+          border-bottom: 4px solid white;
+          transition: border-bottom 200ms ease-in;
+      }
+  
+      #main-nav .logo a{
+          font-size: 3rem;
+      }
+  
+      /*****mobile icon and h1*****/
+       
+      #introduction h1{
+          margin-bottom: 0.5rem;
+          font-size: 2rem;
+      }
+      
+      #introduction a{
+          font-size: 1.1rem;
+          padding: 0.5rem 2rem;
+          margin-top: 1rem;
+      }
+  
+  
+      /*****about section*****/
+      .box {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+  
+  
+        /*****testimonial section*****/
+  
+        .testimonial-row{
+          flex-wrap: wrap;
+        }
+  
+        .testimonial-box{
+          width: 100%;
+          margin: 0 5%;
+        }
+  
+        blockquote{
+          width: 100%;
+      }
+      
+      blockquote:before{
+         font-size: 400%;
+         top:-5px;
+      }
+      
+      cite{
+        margin: 15px 0 30px 0;
+        text-align: center;
+      }
+  
+    
+      /*********contact section mobile*********/
+      input[type=text], input[type=email]{
+        width: 93%;
+        margin-bottom: 15px;
+      }
+      
+      input[type=text]{
+        margin-right: 0;
+      }
+      
+      .contact-info-icon i {
+        margin: 15px 8px 0 0;
+    }
+  
+    .btn{
+      display: block;
+      margin: 0 auto;
+      transform: translateX(-8.2%);
+    }
+  }
+  
+  
+  
+  

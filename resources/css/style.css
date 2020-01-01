@@ -279,9 +279,9 @@ header{
     padding: 2rem 0;
   }
 
-  .product-title{
-    color: #eb4d55;
-    padding: 3rem 0;
+  .product-title {
+    color: tomato;
+    padding: 2.5rem 0 0 0;
   }
 /*
   .container {
@@ -291,17 +291,23 @@ header{
     flex-wrap: wrap;
   }
 */
+#product h2:nth-child(1)::after{
+  background-color: tomato;
+  }
+  h2::after{
+  background-color: white;
+  }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
-    margin: 5rem auto;
+    margin: 3rem auto 5rem auto;
 }
   
   .container .column {
-    
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0,0,0,.2);
@@ -312,40 +318,48 @@ header{
   .container .column:hover {
     transform: scale(1.05);
   }
+
+  .container .column:nth-child(1), .container .column:nth-child(4) {
+    margin-left: 30px;
+  }
+
+  .container .column:nth-child(3), .container .column:nth-child(6) {
+    margin-right: 30px;
+  }
   
   .title {
     background: #68f788;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   
   .title .fa {
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
   }
   
   .title h2 {
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
   }
   
   .price {
-    padding: 10px;
+    padding: 5px;
   }
   
   .price h4 {
     margin: 0;
     padding: 0;
     color: #009688;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
   }
   
   .price h4 span {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700;
   }
   
@@ -356,10 +370,11 @@ header{
   
   .option ul li {
     list-style: none;
-    padding: 15px 10px;
+    padding: 10px 10px;
     border-bottom: 1px solid rgba(0,0,0,.05);
     font-weight: 300;
     color: rgb(34, 34, 30);
+    font-size: 1.3rem;
   }
   
   .option ul li:last-child {
@@ -378,7 +393,7 @@ header{
     text-decoration: none;
     padding: 10px 40px;
     background: #68f788;
-    margin: 20px 0 10px;
+    margin: 10px 0 10px;
     display: inline-block;
     border-radius: 40px;
     text-transform: uppercase;
@@ -462,6 +477,10 @@ cite img{
 
 #sponsor h2{
   color: tomato;
+}
+
+#sponsor h2::after{
+  background-color: tomato;
 }
 
 .sponsor-container{
@@ -697,205 +716,3 @@ textarea{
   padding: 0 5px;
   border-radius: 5px;
 }
-
-
-/***********MOBILE SECTION**********/
-@media (max-width: 1050px){
-
-    /*main nav mobie section*/
-
-    #main-nav {
-        flex-wrap: wrap;
-    }
-
-    #main-nav .logo, #main-nav ul{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    /*************ICON AND H1 TILTE mobile*************/
-
-    #introduction{
-        margin: 0;
-    }
-    
-    #introduction h1{
-        margin-bottom: 2rem;
-        font-size: 3rem;
-    }
-
-    #myBtn{
-        display: none;
-    }
-
-    .card {
-      width: 94%;
-    }
-
-    /********Sponsor mobile********/
-  #sponsor{
-    background-color: white;
-  }
-
-  .sponsor-container{
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto 50px auto;
-  }
-  
-  .sponsor__link{
-    width: 40%;
-    margin: 0 2%;
-    padding-bottom: 15px;
-  }
-  
-  .sponsor__link img{
-    width: 70%;
-    margin: 20px 0;
-    padding-top: 5px;
-  }
-  
-  .sponsor__link:hover img{
-    transform: scale(1.1);
-    transition: .5s ease-in;
-  }
-
-  /* contact section mobile */
-
-  .contact-container {
-    max-width: 90%;
-    flex-wrap: wrap;
-    margin-left: 8.15%;
-  }
-
-  form {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-
-  .contact-info {
-    width: 100%;
-  }
-  
-  input[type=text]{
-    margin-right: 2.5%;
-  }
-
-  textarea{
-    width: 93%;
-  }
-
-  .contact-info p:nth-child(1){
-    width: 93%;
-  }
-
-}
-
-
-
-@media (max-width: 650px){
-
-    /********mobile main nav********/
-
-    #main-nav {
-        padding: 1rem 0;
-    }
-
-    #main-nav ul{
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #main-nav ul li{
-        border-bottom: 0px solid white;
-    }
-    
-    #main-nav ul li:hover{
-        border-bottom: 0px solid white;
-    }
-
-    #main-nav ul a{
-        border-bottom: 1px solid white;
-    }
-    
-    #main-nav ul a:hover{
-        border-bottom: 4px solid white;
-        transition: border-bottom 200ms ease-in;
-    }
-
-    #main-nav .logo a{
-        font-size: 3rem;
-    }
-
-    /*****mobile icon and h1*****/
-     
-    #introduction h1{
-        margin-bottom: 0.5rem;
-        font-size: 2rem;
-    }
-    
-    #introduction a{
-        font-size: 1.1rem;
-        padding: 0.5rem 2rem;
-        margin-top: 1rem;
-    }
-
-
-    /*****about section*****/
-    .box {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      }
-
-
-      /*****testimonial section*****/
-
-      .testimonial-row{
-        flex-wrap: wrap;
-      }
-
-      .testimonial-box{
-        width: 100%;
-        margin: 0 5%;
-      }
-
-      blockquote{
-        width: 100%;
-    }
-    
-    blockquote:before{
-       font-size: 400%;
-       top:-5px;
-    }
-    
-    cite{
-      margin: 15px 0 30px 0;
-      text-align: center;
-    }
-
-    /*********contact section mobile*********/
-    input[type=text], input[type=email]{
-      width: 93%;
-      margin-bottom: 15px;
-    }
-    
-    input[type=text]{
-      margin-right: 0;
-    }
-    
-    .contact-info-icon i {
-      margin: 15px 8px 0 0;
-  }
-
-  .btn{
-    display: block;
-    margin: 0 auto;
-    transform: translateX(-8.2%);
-  }
-}
-
-
-
