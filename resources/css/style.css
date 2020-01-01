@@ -502,10 +502,10 @@ cite img{
 
 
 /***********Contact SECTION**********/
-/* contact section start */
+
 
 #contact{
-  padding: 30px;
+  padding: 40px 0 0 0;
   background-color: #f2f2f2;
 }
 
@@ -513,7 +513,7 @@ cite img{
   text-align: center;
   font-size: 60px;
   text-transform: uppercase;
-  color: rgb(19, 18, 18);
+  color: rgb(3, 204, 137);
   padding: 1.5rem 0 0 0;
 }
 
@@ -593,6 +593,7 @@ input[type=text], input[type=email], textarea{
 input[type=text]:focus, input[type=email]:focus, textarea:focus{
   border: 2px solid tomato;
   transition: .5s;
+  color: #748182;
 }
 
 
@@ -627,8 +628,8 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 }
 
 .contact-info-text i:hover{
-    color: #e49c16;
-    border: 2px solid #e49c16;
+    color: tomato;
+    border: 2px solid tomato;
 }
 
 .contact-info-icon i{
@@ -646,7 +647,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 
 .contact-info-icon i:hover{
   background-color: rgb(255, 255, 255);
-  color: rgb(255, 51, 0);
+  color: tomato;
   border: 0.6px solid tomato;
   transition: .5s;
 }
@@ -665,15 +666,36 @@ textarea{
 .btn{
   padding: 9px;
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: rgb(3, 204, 137);;
+  border-color: rgb(3, 204, 137);;
   border-radius: 5px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn:hover{
-  background-color: #00899e;
+  background-color: rgb(15, 148, 84);
+  box-shadow: rgb(135, 240, 189) 0px 0px 5px, rgb(135, 240, 189) 0px 0px 40px, rgb(135, 240, 189) 0px 0px 20px;
   transition: .3s;
+}
+
+#contact .copyright-text{
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin: 40px auto 0 auto;
+  background-color: rgb(135, 240, 189);
+  box-shadow: 0 0 10px rgb(135, 240, 189), 0 0 40px rgb(135, 240, 189), 0 0 80px rgb(135, 240, 189);
+}
+
+#contact .copyright-text a{
+  color: white;
+  text-decoration: none;
+  background-color: rgb(3, 204, 137);
+  padding: 0 5px;
+  border-radius: 5px;
 }
 
 
@@ -738,7 +760,36 @@ textarea{
     transform: scale(1.1);
     transition: .5s ease-in;
   }
+
+  /* contact section mobile */
+
+  .contact-container {
+    max-width: 90%;
+    flex-wrap: wrap;
+    margin-left: 8.15%;
+  }
+
+  form {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
   
+  input[type=text]{
+    margin-right: 2.5%;
+  }
+
+  textarea{
+    width: 93%;
+  }
+
+  .contact-info p:nth-child(1){
+    width: 93%;
+  }
 
 }
 
@@ -824,7 +875,26 @@ textarea{
       margin: 15px 0 30px 0;
       text-align: center;
     }
+
+    /*********contact section mobile*********/
+    input[type=text], input[type=email]{
+      width: 93%;
+      margin-bottom: 15px;
+    }
     
+    input[type=text]{
+      margin-right: 0;
+    }
+    
+    .contact-info-icon i {
+      margin: 15px 8px 0 0;
+  }
+
+  .btn{
+    display: block;
+    margin: 0 auto;
+    transform: translateX(-8.2%);
+  }
 }
 
 
