@@ -493,7 +493,174 @@ cite img{
   text-align: center;
 }
 
-  
+
+
+/***********Contact SECTION**********/
+/* contact section start */
+
+#contact{
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+
+#contact h5{
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: rgb(19, 18, 18);
+  padding: 1.5rem 0 0 0;
+}
+
+#contact h5 span{
+  color: tomato;
+}
+
+.contact-me{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#contact h6 {
+  color: #0E1F37;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+}
+
+#contact h6:before {
+  left: -25px;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #FC6F5C;
+  position: absolute;
+  bottom: 8px;
+}
+
+#contact h6:after {
+  right: -25px;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #FC6F5C;
+  position: absolute;
+  bottom: 8px;
+}
+
+
+.contact-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: #748182;
+}
+
+form{
+  width: 60%;
+  margin-right: 4%;
+}
+
+input, textarea, button{
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+}
+
+input[type=text], input[type=email]{
+  width: 45%;
+}
+
+
+input[type=text]{
+  margin-right: 7.5%;
+}
+
+input[type=text], input[type=email], textarea{
+  border: 2px solid rgb(255, 255, 255);
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+  border: 2px solid red;
+}
+
+
+.contact-info{
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-text h4{
+  margin-bottom: 20px;
+}
+
+.contact-info-text p:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.contact-info-text p{
+  font-size: 16px;
+  color: #748182;
+  margin-bottom: 10px;
+}
+
+.contact-info-text i{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #748182;
+    text-align: center;
+    line-height: 25px;
+    color: #748182;
+    margin-right: 8px;
+}
+
+.contact-info-text i:hover{
+    color: #e49c16;
+    border: 2px solid #e49c16;
+}
+
+.contact-info-icon i{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgb(255, 51, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  margin: 15px 15px 0 0;
+}
+
+.form-control{
+  padding: 15px;
+}
+
+textarea{
+  height: 150px;
+  width: 98%;
+  margin: 30px 0;
+  padding: 15px;
+}
+
+.btn{
+  padding: 9px;
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #00899e;
+  transition: .3s;
+}
+
 
 /***********MOBILE SECTION**********/
 @media (max-width: 1050px){
