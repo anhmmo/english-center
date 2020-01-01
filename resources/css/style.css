@@ -86,6 +86,7 @@ header{
 #main-nav .logo a{
     font-family: 'Bungee Shade', cursive;
     font-size: 4rem;
+    padding: 0 1rem;
 }
 
 #main-nav ul{
@@ -99,6 +100,11 @@ header{
 
 #main-nav ul li{
     border-bottom: 2px solid white;
+}
+
+
+#main-nav ul li a{
+  padding: 0 0.3rem;
 }
 
 #main-nav ul li:hover{
@@ -585,7 +591,8 @@ input[type=text], input[type=email], textarea{
 }
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus{
-  border: 2px solid red;
+  border: 2px solid tomato;
+  transition: .5s;
 }
 
 
@@ -626,14 +633,22 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
 
 .contact-info-icon i{
   color: rgb(255, 255, 255);
-  font-size: 30px;
-  background-color: rgb(255, 51, 0);
-  width: 50px;
-  height: 50px;
+  font-size: 25px;
+  background-color: tomato;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   margin: 15px 15px 0 0;
+  border: 0.6px solid rgb(255, 254, 254);
+}
+
+.contact-info-icon i:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 51, 0);
+  border: 0.6px solid tomato;
+  transition: .5s;
 }
 
 .form-control{
